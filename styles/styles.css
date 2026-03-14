@@ -32,10 +32,10 @@ main {
 aside {
     width: 40%;
     margin: 10px;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
+    border: 1px solid rgb(129, 165, 212);
     padding: 2px;
-    background-color: rgb(116, 149, 187);
-    color: white;
+    background-color: #bed4f3;
+    color: black;
     text-align: center;
 }
 
