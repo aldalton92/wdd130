@@ -1,6 +1,6 @@
 :root {
     --standard-margin: 10px;
-    --standard-border: 1px solid (0 0 0 / 5%);
+    --standard-border: 1px solid (0 0 0 / 0.5);
     --standard-padding: 2px;
 }
 

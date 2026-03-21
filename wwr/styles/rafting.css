@@ -1,0 +1,105 @@
+:root {
+    /* River Blue */
+    --primary-color: #1F6FA5;
+    /* light forest green */
+    --secondary-color: #6faf5f;
+    /* rafting red orange */
+    --accent1-color: #E94E2E;
+    /* golden yellow */
+    --highlight-color: #F4C542;
+    --font-color: #1A1A1A;
+    --heading-font: Montserrat, Gothom, sans-serif;
+    --body-font: "Open Sans", Lato, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+    background-color: #F5F7FA;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--font-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    width: 75%;
+    top: 20px;
+    padding: 20px;
+    text-align: left;
+    opacity: 0.8;
+    background-color: var(--secondary-color);
+    color: #F5F7FA;
+    border: 1px solid (0 0 0 / 0.5);
+}
+
+article {
+    position: absolute;
+    width: 33%;
+    bottom: 30px;
+    background-color: var(--highlight-color);
+
+}
+
+.hero article img {
+    float: left;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid (0 0 0 / 0.5);
+}
