@@ -91,7 +91,7 @@ h1 {
 article {
     position: absolute;
     width: 33%;
-    bottom: 30px;
+    bottom: 15px;
     background-color: var(--highlight-color);
 
 }
@@ -100,6 +100,7 @@ article {
     float: left;
     width: 100px;
     height: auto;
-    padding: 10px;
-    border: 1px solid (0 0 0 / 0.5);
+    margin: 10px;
+    border: 1px solid (0 0 0 / 0.2);
+    box-shadow: 0 0 20px var(--accent1-color);
 }
