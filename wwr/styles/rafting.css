@@ -31,10 +31,6 @@ footer {
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--primary-color);
-}
-
 header img {
     width: 200px;
     height: auto;
@@ -84,11 +80,11 @@ h1 {
     text-align: left;
     opacity: 0.8;
     background-color: var(--secondary-color);
-    color: #F5F7FA;
+    color: var(--font-color);
     border: 1px solid (0 0 0 / 0.5);
 }
 
-article {
+.hero article {
     position: absolute;
     width: 33%;
     bottom: 15px;
@@ -97,10 +93,9 @@ article {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 100px;
     height: auto;
     margin: 10px;
-    border: 1px solid (0 0 0 / 0.2);
     box-shadow: 0 0 20px var(--accent1-color);
 }
