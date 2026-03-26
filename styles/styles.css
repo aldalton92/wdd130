@@ -10,19 +10,39 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main img {
@@ -38,14 +58,12 @@ p {
     padding: 0;
 }
 
-main {
-    max-width: 75%;
-}
-
 aside {
     position: relative;
-    width: 40%;
+    width: 20rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -55,7 +73,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    left: 290px;
+    left: 75px;
     top: 25px;
     color: rgb(211, 191, 191);
 }
@@ -74,4 +92,9 @@ footer {
     padding: 1rem;
     background-color: #eaeff5;
     color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
