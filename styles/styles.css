@@ -52,6 +52,7 @@ main img {
     border: 1px solid black;
     padding: var(--standard-padding);
     box-shadow: 0 0 30px gray;
+    margin-top: 10px;
 }
 
 p {

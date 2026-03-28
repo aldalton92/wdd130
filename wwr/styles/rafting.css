@@ -8,8 +8,10 @@
     /* golden yellow */
     --highlight-color: #F4C542;
     --font-color: #1A1A1A;
+    --font2-color: #F5F7FA;
     --heading-font: Montserrat, Gothom, sans-serif;
     --body-font: "Open Sans", Lato, sans-serif;
+
 }
 
 * {
@@ -24,6 +26,10 @@ body {
     background-color: #F5F7FA;
 }
 
+img {
+    max-width: 100%;
+}
+
 header,
 main,
 footer {
@@ -32,10 +38,19 @@ footer {
 }
 
 header img {
-    width: 200px;
+    width: 160px;
     height: auto;
-    padding-left: 10px;
-    padding-top: 10px;
+}
+
+header {
+    background-color: var(--primary-color);
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-items: center;
+    max-width: 1000px;
+    border-bottom: 2px solid var(--accent1-color);
 }
 
 h1,
@@ -52,26 +67,6 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 50px;
-    height: auto;
-}
-
-.hero {
-    position: relative;
-
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 h1 {
     position: absolute;
     width: 75%;
@@ -84,11 +79,65 @@ h1 {
 }
 
 h2 {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     width: 100%;
-    color: #F5F7FA;
+    color: var(--font2-color);
     padding: 5px;
     text-align: center;
+}
+
+section {
+    max-width: 1000px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--font2-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+footer p {
+    order: 1;
+}
+
+/* Class Selectors */
+
+.socialmedia a {
+    text-decoration: none;
+    position: relative;
+    padding: 0 0.25rem;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+}
+
+/* 
+In progress responsive highlight for social media links. Not quite working the way I want.
+.socialmedia img::after {
+    content: "";
+    position: absolute;
+    transition: box-shadow 0.3s ease;
+}
+
+.socialmedia img:hover {
+    box-shadow: 0 0 20px var(--accent1-color);
+} */
+
+.hero {
+    position: relative;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero article {
@@ -104,4 +153,73 @@ h2 {
     height: auto;
     margin: 10px;
     box-shadow: 0 0 20px var(--accent1-color);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.navigation a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--font2-color);
+    position: relative;
+    padding: 0.25rem 0;
+}
+
+/* navigation link highlight */
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--highlight-color);
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: var(--highlight-color);
+}
+
+/* navigation link highlight end */
+
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 20px rgb(31, 30, 30)
+}
+
+.advimages {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem
+}
+
+.advimages figure {
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.advimages img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
