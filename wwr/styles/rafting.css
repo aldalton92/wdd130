@@ -75,13 +75,11 @@ h1 {
     text-align: left;
     opacity: 0.8;
     background-color: var(--secondary-color);
-    color: var(--font-color);
 }
 
 h2 {
     background-color: var(--secondary-color);
     width: 100%;
-    color: var(--font2-color);
     padding: 5px;
     text-align: center;
 }
@@ -215,6 +213,7 @@ In progress responsive highlight for social media links. Not quite working the w
 .advimages figure {
     padding-top: 1rem;
     width: 100%;
+    text-align: center;
 }
 
 .advimages img {
