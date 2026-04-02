@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: rgba(238, 232, 232, 0.616);
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgba(197, 191, 191, 0.616);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input,
+textarea,
+select,
+button {
+    display: block;
+    width: 520px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+    border: solid 2px blue;
+    border-radius: 10px;
+}
