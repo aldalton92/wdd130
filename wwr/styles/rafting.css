@@ -67,16 +67,6 @@ article {
     padding: 8px;
 }
 
-h1 {
-    position: absolute;
-    width: 75%;
-    top: 20px;
-    padding: 20px;
-    text-align: left;
-    opacity: 0.8;
-    background-color: var(--secondary-color);
-}
-
 h2 {
     background-color: var(--secondary-color);
     width: 100%;
@@ -129,7 +119,16 @@ In progress responsive highlight for social media links. Not quite working the w
 
 .hero {
     position: relative;
+}
 
+.hero h1 {
+    position: absolute;
+    width: 75%;
+    top: 20px;
+    padding: 20px;
+    text-align: left;
+    opacity: 0.8;
+    background-color: var(--secondary-color);
 }
 
 .hero img {
@@ -151,6 +150,96 @@ In progress responsive highlight for social media links. Not quite working the w
     height: auto;
     margin: 10px;
     box-shadow: 0 0 20px var(--accent1-color);
+}
+
+.contact {
+    position: relative;
+}
+
+.contact h1 {
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    transform: translateX(50%);
+    top: 1rem;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+}
+
+.contact article {
+    position: absolute;
+    width: 75%;
+    top: 2.9rem;
+    transform: translateX(42%);
+
+}
+
+.contact p {
+    padding: 2px;
+    margin: 0;
+    width: 40%;
+    text-align: center;
+    opacity: 0.9;
+    font-weight: 700;
+    background: var(--secondary-color);
+
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formgroup {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.radiogroup {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
+    align-items: center;
+}
+
+.form p {
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.form button {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.impimg {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.impimg img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(15, 15, 15);
 }
 
 .navigation {
