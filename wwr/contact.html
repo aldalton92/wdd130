@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Us</title>
     <meta name="description"
-      content="Ride the rapids and explore breathtaking rivers with expert guides. Safe, thrilling white water rafting trips for beginners to pros.">
+      content="Raven Whiteriver Rafting; Contact us to learn more on how to go on a river adventure!">
     <meta name="author" content="Aaron Dalton">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -36,48 +36,52 @@
         <section class="form">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10980.404472781544!2d-155.48259177110745!3d64.7398309292356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1775334764578!5m2!1sen!2sus"
-              width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              width="300" height="400" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <form>
                 <div class="formgroup">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
+
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
-                </div>
 
-                <p>Message Purpose</p>
+                    <label id="messagepurpose">Message Purpose</label>
+                    <div class="radiogroup">
+                        <input type="radio" id="inquiry" name="purpose">
+                        <label for="inquiry">General Inquiry</label>
 
-                <div class="radiogroup">
-                    <input type="radio" id="inquiry" name="purpose">
-                    <label for="inquiry">General Inquiry</label>
-                    <input type="radio" name="purpose" id="reservation">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" name="purpose" id="suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </div>
+                        <input type="radio" name="purpose" id="reservation">
+                        <label for="reservation">Reservation Question</label>
 
-                <div class="formgroup">
-                    <label for="message">Message</label>
+                        <input type="radio" name="purpose" id="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                    <label for="message" id="messagelabel">Message</label>
                     <textarea name="message" id="message" rows="4"></textarea>
-                </div>
-
-                <div class="checkbox">
                     <input type="checkbox" id="subscribe" name="subscribe">
                     <label for="subscribe">Subscribe To Newsletter</label>
+                    <button type="submit">Get in Touch!</button>
                 </div>
-
-                <button type="submit">Get in Touch!</button>
             </form>
         </section>
 
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
             <div class="impimg">
-                <img src="images/employee1.jpg" alt="Happy Man 1">
-                <img src="images/employee2.jpg" alt="Happy Woman">
-                <img src="images/employee3.jpg" alt="Happy Man 2">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Happy Man 1">
+                    <figcaption>Rob</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Happy Woman">
+                    <figcaption>Martha</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Happy Man 2">
+                    <figcaption>Antonio</figcaption>
+                </figure>
             </div>
         </section>
 
