@@ -395,12 +395,13 @@ In progress responsive highlight for social media links. Not quite working the w
     position: relative;
     padding: 0.25rem 2rem;
     background-color: var(--secondary-color);
-    box-shadow: 0 0 20px black;
+    border: 1px solid black;
     border-radius: 1rem;
 }
 
 .splash a:hover {
     color: var(--highlight-color);
+    box-shadow: 0 0 20px var(--accent1-color);
 }
 
 .chooseus {
@@ -533,11 +534,12 @@ In progress responsive highlight for social media links. Not quite working the w
     align-self: center;
     font-size: large;
     font-weight: 700;
-    box-shadow: 0 0 20px var(--primary-color);
+
 }
 
 .newsletter form button:hover {
     color: var(--highlight-color);
+    box-shadow: 0 0 20px var(--primary-color);
 }
 
 /* Trips page */
@@ -571,12 +573,13 @@ In progress responsive highlight for social media links. Not quite working the w
     text-decoration: none;
     font-size: x-large;
     background-color: var(--secondary-color);
+    border: 1px solid black;
     border-radius: 1rem;
-    box-shadow: 0 0 20px black;
 }
 
 .bannertrips a:hover {
     color: var(--highlight-color);
+    box-shadow: 0 0 20px black;
 }
 
 .tripstop {
@@ -606,6 +609,7 @@ In progress responsive highlight for social media links. Not quite working the w
 .tripsbottom {
     display: grid;
     grid-template-columns: 45% 1fr;
+    gap: 1rem;
 }
 
 .tripsbottom p {
