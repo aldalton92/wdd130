@@ -141,7 +141,7 @@ In progress responsive highlight for social media links. Not quite working the w
 .hero article {
     position: absolute;
     width: 33%;
-    bottom: 15px;
+    bottom: 6rem;
     background-color: var(--highlight-color);
 }
 
@@ -346,14 +346,23 @@ In progress responsive highlight for social media links. Not quite working the w
     position: absolute;
     top: 2rem;
     left: 6rem;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    width: 50%;
+    opacity: .8;
+    border-radius: 5px;
 }
 
 .herohome p {
     position: absolute;
-    top: 4rem;
+    top: 4.3rem;
     left: 7rem;
     font-size: larger;
     font-weight: 700;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    opacity: .8;
+    border-radius: 5px;
 }
 
 .action {
@@ -594,7 +603,6 @@ In progress responsive highlight for social media links. Not quite working the w
 }
 
 .tripstop h2 {
-    border: 1px red solid;
     text-align: left;
 }
 
@@ -602,7 +610,6 @@ In progress responsive highlight for social media links. Not quite working the w
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid red;
     text-align: left;
 }
 
@@ -613,8 +620,9 @@ In progress responsive highlight for social media links. Not quite working the w
 }
 
 .tripsbottom p {
-    margin: 0 auto;
+    margin: .5rem auto;
     padding: 0;
+    text-align: center;
 }
 
 .tripchart {
@@ -640,10 +648,11 @@ In progress responsive highlight for social media links. Not quite working the w
 
 th,
 td {
-    border: 1px solid var(--highlight-color);
+    border: 1px solid black;
     padding: .5rem 1rem;
 }
 
 thead th {
     background-color: var(--primary-color);
+    color: var(--font2-color);
 }
