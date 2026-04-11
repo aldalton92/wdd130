@@ -539,3 +539,107 @@ In progress responsive highlight for social media links. Not quite working the w
 .newsletter form button:hover {
     color: var(--highlight-color);
 }
+
+/* Trips page */
+.bannertrips {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--font2-color);
+    width: 100%;
+}
+
+.tripsaction {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.bannertrips h1 {
+    padding-bottom: 1rem;
+}
+
+.bannertrips h2 {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    background-color: var(--mask);
+    color: var(--font2-color);
+}
+
+.bannertrips a {
+    margin: 1rem;
+    padding: .5rem;
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: x-large;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px black;
+}
+
+.bannertrips a:hover {
+    color: var(--highlight-color);
+}
+
+.tripstop {
+    background-color: var(--font2-color);
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 1rem;
+    border: 5px solid var(--primary-color);
+    border-radius: .5rem;
+}
+
+.tripstop h2 {
+    border: 1px red solid;
+    text-align: left;
+}
+
+.tripstop p {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid red;
+    text-align: left;
+}
+
+.tripsbottom {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+}
+
+.tripsbottom p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tripchart {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--font2-color);
+    color: var(--font-color);
+    border: 5px solid var(--primary-color);
+    border-radius: .5rem;
+}
+
+.tripchart h2 {
+    background-color: var(--mask);
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tripchart table {
+    border-collapse: collapse;
+    border: 2px solid var(--primary-color);
+    justify-content: space-evenly;
+}
+
+th,
+td {
+    border: 1px solid var(--highlight-color);
+    padding: .5rem 1rem;
+}
+
+thead th {
+    background-color: var(--primary-color);
+}
