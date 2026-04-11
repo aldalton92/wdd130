@@ -24,6 +24,7 @@ body {
     font-family: var(--body-font);
     color: var(--font-color);
     background-color: #F5F7FA;
+    margin: 0;
 }
 
 img {
@@ -33,7 +34,7 @@ img {
 header,
 main,
 footer {
-    width: 840px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -335,4 +336,206 @@ In progress responsive highlight for social media links. Not quite working the w
     height: 200px;
     object-fit: cover;
     display: block;
+}
+
+.herohome {
+    position: relative;
+}
+
+.herohome h1 {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+}
+
+.herohome p {
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    --mask:
+        radial-gradient(8.6rem at 50% calc(100% - 12rem), #000 99%, #0000 101%) calc(50% - 10rem) 0/20rem 100%,
+        radial-gradient(8.6rem at 50% calc(100% + 7rem), #0000 99%, #000 101%) 50% calc(100% - 5rem)/20rem 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 1rem;
+}
+
+.splash h2 {
+    background-color: var(--mask);
+    color: var(--font2-color);
+}
+
+.splash p {
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+}
+
+.splash a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--font-color);
+    position: relative;
+    padding: 0.25rem 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px black;
+    border-radius: 1rem;
+}
+
+.splash a:hover {
+    color: var(--highlight-color);
+}
+
+.chooseus {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem
+}
+
+.chooseus img {
+    height: 5rem;
+    justify-self: center;
+}
+
+.chooseus h3 {
+    justify-self: center;
+
+}
+
+.chooseus p {
+    justify-self: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.offnews {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--font2-color);
+}
+
+.signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: var(--font-color);
+    border: 5px solid var(--primary-color);
+    border-radius: .5rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.signup h2 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    padding: rem;
+}
+
+#box2 h3 {
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+#box2 p {
+    justify-self: center;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+#box3 h3 {
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+#box3 p {
+    justify-self: center;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.signup img {
+    box-shadow: 0 0 20px black;
+    border-radius: 5px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border: 5px solid var(--primary-color);
+    border-radius: .5rem;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    color: var(--font-color);
+}
+
+.newsletter img {
+    width: 5rem;
+    align-self: center;
+}
+
+.newsletter p {
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.newsletter h3 {
+    align-self: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter form input {
+    height: 2rem;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+}
+
+.newsletter form button {
+    height: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    width: 75%;
+    align-self: center;
+    font-size: large;
+    font-weight: 700;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.newsletter form button:hover {
+    color: var(--highlight-color);
 }
